@@ -1,0 +1,28 @@
+GET http://localhost:3000/books
+
+###
+POST http://localhost:3000/books/create
+Content-Type: application/json
+
+{
+    "title": "Ratatouille",
+    "author": "El pepe",
+    "publishedYear": 2006
+}
+{
+    "title": "La Biblia",
+    "author": "Jesus",
+    "publishedYear": 1
+}
+###
+
+PUT http://localhost:3000/books/edit/66d7756d133c8bff1082710d
+Content-Type: application/json
+
+{
+    "title": "El Código da Vinci",
+}
+
+###
+
+DELETE http://localhost:3000/books/66d7756d133c8bff1082710d
